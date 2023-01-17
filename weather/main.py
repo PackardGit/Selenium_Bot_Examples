@@ -24,7 +24,6 @@ my_driver.title()
 my_driver.use_searchbar("Katowice", my_website.search_bar)
 temp = my_driver.get_text_value_from_element((By.CLASS_NAME, "weather-currently-temp-strict"))
 Katowice = City("Katowice", temp)
-temp2 = int(temp.split("°")[0])
 
 my_driver.use_searchbar("Kielce", my_website.search_bar)
 temp = my_driver.get_text_value_from_element((By.CLASS_NAME, "weather-currently-temp-strict"))
